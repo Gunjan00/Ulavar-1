@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_8c44374845d84b3b885b9e790c9c044f {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_8c44374845d84b3b885b9e790c9c044f" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_8c44374845d84b3b885b9e790c9c044f = L.map(
+        'map_8c44374845d84b3b885b9e790c9c044f', {
+        center: [13.0827, 80.2707],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_0f6a12257e324d8386be8dde2655d730 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+    
+        var marker_799d34b235e142189b52bd24bdb8b10b = L.marker(
+            [13.035214, 80.248811],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_6d9cd492eb32481a9490851f2196fd92 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_799d34b235e142189b52bd24bdb8b10b.setIcon(icon_6d9cd492eb32481a9490851f2196fd92);
+            
+    
+            var popup_428d3e62310a4369851af2678a0414d8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_321cd8d9058945e8ab2397eb3060f780 = $(`<div id="html_321cd8d9058945e8ab2397eb3060f780" style="width: 100.0%; height: 100.0%;">ARCHEAN GROUP</div>`)[0];
+                popup_428d3e62310a4369851af2678a0414d8.setContent(html_321cd8d9058945e8ab2397eb3060f780);
+            
+
+            marker_799d34b235e142189b52bd24bdb8b10b.bindPopup(popup_428d3e62310a4369851af2678a0414d8)
+            ;
+
+            
+        
+    
+        marker_799d34b235e142189b52bd24bdb8b10b.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bfc82ecd8ed64ce0942f03848b58d948 = L.marker(
+            [13.189657, 80.187462],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_0eb66b6b10894b21ababcb725fd94206 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bfc82ecd8ed64ce0942f03848b58d948.setIcon(icon_0eb66b6b10894b21ababcb725fd94206);
+            
+    
+            var popup_089d1943e6d34481ad05de0ac87bef60 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_328b769e815a4063a194f24216d0ebab = $(`<div id="html_328b769e815a4063a194f24216d0ebab" style="width: 100.0%; height: 100.0%;">ATHITHAN FERTILIZERS</div>`)[0];
+                popup_089d1943e6d34481ad05de0ac87bef60.setContent(html_328b769e815a4063a194f24216d0ebab);
+            
+
+            marker_bfc82ecd8ed64ce0942f03848b58d948.bindPopup(popup_089d1943e6d34481ad05de0ac87bef60)
+            ;
+
+            
+        
+    
+        marker_bfc82ecd8ed64ce0942f03848b58d948.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ec26d9d903e74f6b9968cf4aff5c72d9 = L.marker(
+            [13.036512, 80.228126],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_ebb96c2a79694d43a90facc718e29b42 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ec26d9d903e74f6b9968cf4aff5c72d9.setIcon(icon_ebb96c2a79694d43a90facc718e29b42);
+            
+    
+            var popup_8bae32e9f57f4c37999f1e211b0f9091 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7a803f6a1134477f8cfb548182d01eb2 = $(`<div id="html_7a803f6a1134477f8cfb548182d01eb2" style="width: 100.0%; height: 100.0%;">SAKTHI SEEDS</div>`)[0];
+                popup_8bae32e9f57f4c37999f1e211b0f9091.setContent(html_7a803f6a1134477f8cfb548182d01eb2);
+            
+
+            marker_ec26d9d903e74f6b9968cf4aff5c72d9.bindPopup(popup_8bae32e9f57f4c37999f1e211b0f9091)
+            ;
+
+            
+        
+    
+        marker_ec26d9d903e74f6b9968cf4aff5c72d9.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_150b0f84f08642e4bef7e27bd08dda5e = L.marker(
+            [13.036808, 80.157312],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_f62ffe894c65422e92bf1fcd460526dd = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_150b0f84f08642e4bef7e27bd08dda5e.setIcon(icon_f62ffe894c65422e92bf1fcd460526dd);
+            
+    
+            var popup_e026aa7dd58f4d2d84f2d9a542fd2391 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_721fef8f6a334f46983fb16da21b32ab = $(`<div id="html_721fef8f6a334f46983fb16da21b32ab" style="width: 100.0%; height: 100.0%;">SUNDARAM AGRO CENTER</div>`)[0];
+                popup_e026aa7dd58f4d2d84f2d9a542fd2391.setContent(html_721fef8f6a334f46983fb16da21b32ab);
+            
+
+            marker_150b0f84f08642e4bef7e27bd08dda5e.bindPopup(popup_e026aa7dd58f4d2d84f2d9a542fd2391)
+            ;
+
+            
+        
+    
+        marker_150b0f84f08642e4bef7e27bd08dda5e.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a325b4795d2c4f58b6a2dc2134f164f7 = L.marker(
+            [12.996485, 80.257921],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_061aa8bf30d04a939fefb3699cd1e554 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a325b4795d2c4f58b6a2dc2134f164f7.setIcon(icon_061aa8bf30d04a939fefb3699cd1e554);
+            
+    
+            var popup_732adb6e9ad949eeb22bdfdb0a880b78 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e09ff1aec0b8438db02da1255728e0d0 = $(`<div id="html_e09ff1aec0b8438db02da1255728e0d0" style="width: 100.0%; height: 100.0%;">SILVERLINE FERTILIZERS PVT. LTD.</div>`)[0];
+                popup_732adb6e9ad949eeb22bdfdb0a880b78.setContent(html_e09ff1aec0b8438db02da1255728e0d0);
+            
+
+            marker_a325b4795d2c4f58b6a2dc2134f164f7.bindPopup(popup_732adb6e9ad949eeb22bdfdb0a880b78)
+            ;
+
+            
+        
+    
+        marker_a325b4795d2c4f58b6a2dc2134f164f7.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ee66d5956e674baeacb00c8bcc7a5009 = L.marker(
+            [12.978295, 80.133476],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_9a3609767c2f4fed8a1299cbb2594371 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ee66d5956e674baeacb00c8bcc7a5009.setIcon(icon_9a3609767c2f4fed8a1299cbb2594371);
+            
+    
+            var popup_b2de71e93c094507adf9977acd0500ff = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_268d8d9b4e3841569a8cba3d595b1aa0 = $(`<div id="html_268d8d9b4e3841569a8cba3d595b1aa0" style="width: 100.0%; height: 100.0%;">GOODWILL STORE</div>`)[0];
+                popup_b2de71e93c094507adf9977acd0500ff.setContent(html_268d8d9b4e3841569a8cba3d595b1aa0);
+            
+
+            marker_ee66d5956e674baeacb00c8bcc7a5009.bindPopup(popup_b2de71e93c094507adf9977acd0500ff)
+            ;
+
+            
+        
+    
+        marker_ee66d5956e674baeacb00c8bcc7a5009.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_dd837ce9eacc436bbbf160718fa2afb0 = L.marker(
+            [13.052391, 80.224078],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_c90e6e3612ac4d14bc1d165209d45a03 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dd837ce9eacc436bbbf160718fa2afb0.setIcon(icon_c90e6e3612ac4d14bc1d165209d45a03);
+            
+    
+            var popup_6833a17f60784d48b55dd3b4f3a10975 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e9a341b6a1a64b2ab0e37880c1d22781 = $(`<div id="html_e9a341b6a1a64b2ab0e37880c1d22781" style="width: 100.0%; height: 100.0%;">NATIONAL FERTILIZERS LIMITED</div>`)[0];
+                popup_6833a17f60784d48b55dd3b4f3a10975.setContent(html_e9a341b6a1a64b2ab0e37880c1d22781);
+            
+
+            marker_dd837ce9eacc436bbbf160718fa2afb0.bindPopup(popup_6833a17f60784d48b55dd3b4f3a10975)
+            ;
+
+            
+        
+    
+        marker_dd837ce9eacc436bbbf160718fa2afb0.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_42fe6eeeac444385b7c5c43977ac8b97 = L.marker(
+            [13.042681, 80.24726],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_b045ca244bc34bfc99ca187b635238e6 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_42fe6eeeac444385b7c5c43977ac8b97.setIcon(icon_b045ca244bc34bfc99ca187b635238e6);
+            
+    
+            var popup_1fabb3976893416a8ccb064956a167c9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4a06968d6cc449ab8d3b3c9e1693bf79 = $(`<div id="html_4a06968d6cc449ab8d3b3c9e1693bf79" style="width: 100.0%; height: 100.0%;">TUTICORIN ALKILI CHEMICAL FERTILIZERS LIMITED</div>`)[0];
+                popup_1fabb3976893416a8ccb064956a167c9.setContent(html_4a06968d6cc449ab8d3b3c9e1693bf79);
+            
+
+            marker_42fe6eeeac444385b7c5c43977ac8b97.bindPopup(popup_1fabb3976893416a8ccb064956a167c9)
+            ;
+
+            
+        
+    
+        marker_42fe6eeeac444385b7c5c43977ac8b97.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7ad4ce36694b44899593a25b9431cc95 = L.marker(
+            [12.983524000000001, 80.25962],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_af5427a35e584b5da8d007eb4c84aeb3 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7ad4ce36694b44899593a25b9431cc95.setIcon(icon_af5427a35e584b5da8d007eb4c84aeb3);
+            
+    
+            var popup_bbf371c426a44a27bcab9dafee769ea7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6ec8085bec3648e294b513838f0e79fe = $(`<div id="html_6ec8085bec3648e294b513838f0e79fe" style="width: 100.0%; height: 100.0%;">PEST 'N' GREEN CARE AGRO SERVICES</div>`)[0];
+                popup_bbf371c426a44a27bcab9dafee769ea7.setContent(html_6ec8085bec3648e294b513838f0e79fe);
+            
+
+            marker_7ad4ce36694b44899593a25b9431cc95.bindPopup(popup_bbf371c426a44a27bcab9dafee769ea7)
+            ;
+
+            
+        
+    
+        marker_7ad4ce36694b44899593a25b9431cc95.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1410a0c5cf764094bb95655548935598 = L.marker(
+            [12.924576, 80.114274],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_6764b491eaab4f388a68ac3236e4ac57 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1410a0c5cf764094bb95655548935598.setIcon(icon_6764b491eaab4f388a68ac3236e4ac57);
+            
+    
+            var popup_01523de1a66548699a4abc9d919ef9d6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_827775b099664223a2546bdd309e66b6 = $(`<div id="html_827775b099664223a2546bdd309e66b6" style="width: 100.0%; height: 100.0%;">ARUMUGAM ARGO AGENCY</div>`)[0];
+                popup_01523de1a66548699a4abc9d919ef9d6.setContent(html_827775b099664223a2546bdd309e66b6);
+            
+
+            marker_1410a0c5cf764094bb95655548935598.bindPopup(popup_01523de1a66548699a4abc9d919ef9d6)
+            ;
+
+            
+        
+    
+        marker_1410a0c5cf764094bb95655548935598.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bcedeafbaa484df0abdbdad7e0e99c00 = L.marker(
+            [13.04309, 80.235015],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_f73496e5add948dd90cd49dcc9350f1d = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bcedeafbaa484df0abdbdad7e0e99c00.setIcon(icon_f73496e5add948dd90cd49dcc9350f1d);
+            
+    
+            var popup_de48af76426f42e8aad770eecf42fa2d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b528cc78272b4e50bbbe96c743b2fbcf = $(`<div id="html_b528cc78272b4e50bbbe96c743b2fbcf" style="width: 100.0%; height: 100.0%;">SUMA AGRO INDIA PVT LTD</div>`)[0];
+                popup_de48af76426f42e8aad770eecf42fa2d.setContent(html_b528cc78272b4e50bbbe96c743b2fbcf);
+            
+
+            marker_bcedeafbaa484df0abdbdad7e0e99c00.bindPopup(popup_de48af76426f42e8aad770eecf42fa2d)
+            ;
+
+            
+        
+    
+        marker_bcedeafbaa484df0abdbdad7e0e99c00.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6f561813e7c24565aadc30297ba4c101 = L.marker(
+            [12.962492999999998, 80.25604],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_8b9dee5a4b6e4bc4970a29d7ca0b5ed6 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f561813e7c24565aadc30297ba4c101.setIcon(icon_8b9dee5a4b6e4bc4970a29d7ca0b5ed6);
+            
+    
+            var popup_a6445922983640f9ae955f30836aa7fc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_abf60dbf3fbb473e8538186ee52034f4 = $(`<div id="html_abf60dbf3fbb473e8538186ee52034f4" style="width: 100.0%; height: 100.0%;">CHANDRAMOHAN ORGANIC FERTILIZERS</div>`)[0];
+                popup_a6445922983640f9ae955f30836aa7fc.setContent(html_abf60dbf3fbb473e8538186ee52034f4);
+            
+
+            marker_6f561813e7c24565aadc30297ba4c101.bindPopup(popup_a6445922983640f9ae955f30836aa7fc)
+            ;
+
+            
+        
+    
+        marker_6f561813e7c24565aadc30297ba4c101.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6d7e09922c914a7ca1daa1c6d130d480 = L.marker(
+            [13.036733, 80.228348],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_b0919dbccec14da283e33b4e06d7b12b = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6d7e09922c914a7ca1daa1c6d130d480.setIcon(icon_b0919dbccec14da283e33b4e06d7b12b);
+            
+    
+            var popup_ae20f30d4a094705b4758b028d37326e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a16c0898edfd42f8bee83917af68df7a = $(`<div id="html_a16c0898edfd42f8bee83917af68df7a" style="width: 100.0%; height: 100.0%;">SUSI SEEDS</div>`)[0];
+                popup_ae20f30d4a094705b4758b028d37326e.setContent(html_a16c0898edfd42f8bee83917af68df7a);
+            
+
+            marker_6d7e09922c914a7ca1daa1c6d130d480.bindPopup(popup_ae20f30d4a094705b4758b028d37326e)
+            ;
+
+            
+        
+    
+        marker_6d7e09922c914a7ca1daa1c6d130d480.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0953b668d9ae4f8db82ee9045e8ff357 = L.marker(
+            [13.102438000000001, 80.098721],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_b1f63c30f8f24ee3abeaeb7e54fdd3a5 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0953b668d9ae4f8db82ee9045e8ff357.setIcon(icon_b1f63c30f8f24ee3abeaeb7e54fdd3a5);
+            
+    
+            var popup_8e938b8764eb4351bb13c59e261064a5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ee300f3be82f46d2ba54f455d03623cb = $(`<div id="html_ee300f3be82f46d2ba54f455d03623cb" style="width: 100.0%; height: 100.0%;">TR GLOBAL EXPERTS</div>`)[0];
+                popup_8e938b8764eb4351bb13c59e261064a5.setContent(html_ee300f3be82f46d2ba54f455d03623cb);
+            
+
+            marker_0953b668d9ae4f8db82ee9045e8ff357.bindPopup(popup_8e938b8764eb4351bb13c59e261064a5)
+            ;
+
+            
+        
+    
+        marker_0953b668d9ae4f8db82ee9045e8ff357.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_79503b1de2344c4cb69ff1bb4b6bcf02 = L.marker(
+            [13.040434, 80.215248],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_6ce137ab71a84c2dafb014b2725fa604 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_79503b1de2344c4cb69ff1bb4b6bcf02.setIcon(icon_6ce137ab71a84c2dafb014b2725fa604);
+            
+    
+            var popup_a67016e125434102abf51bd7ec4e0d7e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fd4a5d321ef84b9c9d13e4ee31bb0400 = $(`<div id="html_fd4a5d321ef84b9c9d13e4ee31bb0400" style="width: 100.0%; height: 100.0%;">CHEMTROLS MARKETTING DIVISION</div>`)[0];
+                popup_a67016e125434102abf51bd7ec4e0d7e.setContent(html_fd4a5d321ef84b9c9d13e4ee31bb0400);
+            
+
+            marker_79503b1de2344c4cb69ff1bb4b6bcf02.bindPopup(popup_a67016e125434102abf51bd7ec4e0d7e)
+            ;
+
+            
+        
+    
+        marker_79503b1de2344c4cb69ff1bb4b6bcf02.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8d8a0c6b7107405ab55b79f03135124b = L.marker(
+            [13.148546, 80.292787],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_554f5ff6413449399484765cd8afba02 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8d8a0c6b7107405ab55b79f03135124b.setIcon(icon_554f5ff6413449399484765cd8afba02);
+            
+    
+            var popup_d701b5db1df243e3bc02ea9a340eb492 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_69732bd965a243c3a787562a4007c002 = $(`<div id="html_69732bd965a243c3a787562a4007c002" style="width: 100.0%; height: 100.0%;">SWETHA AGROTECH</div>`)[0];
+                popup_d701b5db1df243e3bc02ea9a340eb492.setContent(html_69732bd965a243c3a787562a4007c002);
+            
+
+            marker_8d8a0c6b7107405ab55b79f03135124b.bindPopup(popup_d701b5db1df243e3bc02ea9a340eb492)
+            ;
+
+            
+        
+    
+        marker_8d8a0c6b7107405ab55b79f03135124b.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_231f5886596a4f2cb7d2f18057d41d75 = L.marker(
+            [13.084952000000001, 80.270464],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_45431256616e4e72966dab68794dc4bf = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_231f5886596a4f2cb7d2f18057d41d75.setIcon(icon_45431256616e4e72966dab68794dc4bf);
+            
+    
+            var popup_c0cde24856a94d04b3efdec335465170 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8f7a80b823914754813f835f738a7f63 = $(`<div id="html_8f7a80b823914754813f835f738a7f63" style="width: 100.0%; height: 100.0%;">Indian Bank</div>`)[0];
+                popup_c0cde24856a94d04b3efdec335465170.setContent(html_8f7a80b823914754813f835f738a7f63);
+            
+
+            marker_231f5886596a4f2cb7d2f18057d41d75.bindPopup(popup_c0cde24856a94d04b3efdec335465170)
+            ;
+
+            
+        
+    
+        marker_231f5886596a4f2cb7d2f18057d41d75.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b43aa58f9336403d94e60785413469f6 = L.marker(
+            [13.082778, 80.270765],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_af8c04d8939e4f8e8f0a6b48816c936f = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b43aa58f9336403d94e60785413469f6.setIcon(icon_af8c04d8939e4f8e8f0a6b48816c936f);
+            
+    
+            var popup_ed330a7c0c2c4635866e3c47cbf48a78 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7138bd5987e44abdbcd1180b9651e6da = $(`<div id="html_7138bd5987e44abdbcd1180b9651e6da" style="width: 100.0%; height: 100.0%;">Axis Bank</div>`)[0];
+                popup_ed330a7c0c2c4635866e3c47cbf48a78.setContent(html_7138bd5987e44abdbcd1180b9651e6da);
+            
+
+            marker_b43aa58f9336403d94e60785413469f6.bindPopup(popup_ed330a7c0c2c4635866e3c47cbf48a78)
+            ;
+
+            
+        
+    
+        marker_b43aa58f9336403d94e60785413469f6.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5852e4493a694cd182ee6c9211a19911 = L.marker(
+            [13.08412, 80.272178],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_e1bc8a31cc4d49e19e456b4d0b54ef37 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5852e4493a694cd182ee6c9211a19911.setIcon(icon_e1bc8a31cc4d49e19e456b4d0b54ef37);
+            
+    
+            var popup_51f5e003b0f94484a8721667a2a4c014 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_326e40a0f10c423b90ef44dcd5a97d85 = $(`<div id="html_326e40a0f10c423b90ef44dcd5a97d85" style="width: 100.0%; height: 100.0%;">Canara Bank</div>`)[0];
+                popup_51f5e003b0f94484a8721667a2a4c014.setContent(html_326e40a0f10c423b90ef44dcd5a97d85);
+            
+
+            marker_5852e4493a694cd182ee6c9211a19911.bindPopup(popup_51f5e003b0f94484a8721667a2a4c014)
+            ;
+
+            
+        
+    
+        marker_5852e4493a694cd182ee6c9211a19911.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8c10fe9fc3f04cf1a945bd783611c46d = L.marker(
+            [13.091258, 80.27099799999999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_34c20861dbc54632ad9af199d1d677de = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8c10fe9fc3f04cf1a945bd783611c46d.setIcon(icon_34c20861dbc54632ad9af199d1d677de);
+            
+    
+            var popup_9a41b18e1afb4e7bbceddbb256775f64 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f80dbcb2c7af40468da3b5e589f3b6bd = $(`<div id="html_f80dbcb2c7af40468da3b5e589f3b6bd" style="width: 100.0%; height: 100.0%;">Indian Overseas Bank</div>`)[0];
+                popup_9a41b18e1afb4e7bbceddbb256775f64.setContent(html_f80dbcb2c7af40468da3b5e589f3b6bd);
+            
+
+            marker_8c10fe9fc3f04cf1a945bd783611c46d.bindPopup(popup_9a41b18e1afb4e7bbceddbb256775f64)
+            ;
+
+            
+        
+    
+        marker_8c10fe9fc3f04cf1a945bd783611c46d.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c2f19925407546bfb442b14be46eab3f = L.marker(
+            [13.082753, 80.270718],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_b7d5f249ecc84557836ff6ababcb9eb6 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c2f19925407546bfb442b14be46eab3f.setIcon(icon_b7d5f249ecc84557836ff6ababcb9eb6);
+            
+    
+            var popup_a14dc199b6e942669173835ab09e7188 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3204a53d7a3b4ee3b741550518ce2b75 = $(`<div id="html_3204a53d7a3b4ee3b741550518ce2b75" style="width: 100.0%; height: 100.0%;">CIMB Bank</div>`)[0];
+                popup_a14dc199b6e942669173835ab09e7188.setContent(html_3204a53d7a3b4ee3b741550518ce2b75);
+            
+
+            marker_c2f19925407546bfb442b14be46eab3f.bindPopup(popup_a14dc199b6e942669173835ab09e7188)
+            ;
+
+            
+        
+    
+        marker_c2f19925407546bfb442b14be46eab3f.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c7813ea48c0f4c628831a699ac2c707b = L.marker(
+            [13.082649, 80.270697],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_a9674fedd45e4ac98746719633276c43 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c7813ea48c0f4c628831a699ac2c707b.setIcon(icon_a9674fedd45e4ac98746719633276c43);
+            
+    
+            var popup_7db8eed4a918498bb27e12ccb154c55f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_41c3b43ca53e449bb6ce8af9bdbe9816 = $(`<div id="html_41c3b43ca53e449bb6ce8af9bdbe9816" style="width: 100.0%; height: 100.0%;">The Catholic Syrian Bank Ltd.</div>`)[0];
+                popup_7db8eed4a918498bb27e12ccb154c55f.setContent(html_41c3b43ca53e449bb6ce8af9bdbe9816);
+            
+
+            marker_c7813ea48c0f4c628831a699ac2c707b.bindPopup(popup_7db8eed4a918498bb27e12ccb154c55f)
+            ;
+
+            
+        
+    
+        marker_c7813ea48c0f4c628831a699ac2c707b.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_37541bf1a60641909b6b48477217f1df = L.marker(
+            [13.091403999999999, 80.27411],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_05c6f8dd05f24cdeaf17159c6c690c5c = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_37541bf1a60641909b6b48477217f1df.setIcon(icon_05c6f8dd05f24cdeaf17159c6c690c5c);
+            
+    
+            var popup_0d8f958cc624470cb43e1992ff15f58a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_de7eb3b7c0dc46ec831dab7060b629d7 = $(`<div id="html_de7eb3b7c0dc46ec831dab7060b629d7" style="width: 100.0%; height: 100.0%;">State Bank of India</div>`)[0];
+                popup_0d8f958cc624470cb43e1992ff15f58a.setContent(html_de7eb3b7c0dc46ec831dab7060b629d7);
+            
+
+            marker_37541bf1a60641909b6b48477217f1df.bindPopup(popup_0d8f958cc624470cb43e1992ff15f58a)
+            ;
+
+            
+        
+    
+        marker_37541bf1a60641909b6b48477217f1df.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1a533feb78274e238b50cc267c369db0 = L.marker(
+            [13.085914, 80.27393000000001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_d7a648048b0749fb8af2c338713c3aa2 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1a533feb78274e238b50cc267c369db0.setIcon(icon_d7a648048b0749fb8af2c338713c3aa2);
+            
+    
+            var popup_69a6d51e884e414bb8e974bed547d838 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7a7ad3429cbe400c95075ac9b641bc96 = $(`<div id="html_7a7ad3429cbe400c95075ac9b641bc96" style="width: 100.0%; height: 100.0%;">The Railway Employees Cooperative Credit Society</div>`)[0];
+                popup_69a6d51e884e414bb8e974bed547d838.setContent(html_7a7ad3429cbe400c95075ac9b641bc96);
+            
+
+            marker_1a533feb78274e238b50cc267c369db0.bindPopup(popup_69a6d51e884e414bb8e974bed547d838)
+            ;
+
+            
+        
+    
+        marker_1a533feb78274e238b50cc267c369db0.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_13cc389a9d314e288c1fdb624f22f291 = L.marker(
+            [13.085313000000001, 80.269925],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_5a989734ed2346a0ab7d7c86db0b33e3 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_13cc389a9d314e288c1fdb624f22f291.setIcon(icon_5a989734ed2346a0ab7d7c86db0b33e3);
+            
+    
+            var popup_93681c3be27b48e08e9492104d96d4f8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6f33d29eeed64386bed6200f29d03150 = $(`<div id="html_6f33d29eeed64386bed6200f29d03150" style="width: 100.0%; height: 100.0%;">State Bank of India</div>`)[0];
+                popup_93681c3be27b48e08e9492104d96d4f8.setContent(html_6f33d29eeed64386bed6200f29d03150);
+            
+
+            marker_13cc389a9d314e288c1fdb624f22f291.bindPopup(popup_93681c3be27b48e08e9492104d96d4f8)
+            ;
+
+            
+        
+    
+        marker_13cc389a9d314e288c1fdb624f22f291.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_88e38516fe604140b398bf20e4104836 = L.marker(
+            [13.082732, 80.270718],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_ddaaffd3b9e349ca9118f21453c1c12c = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_88e38516fe604140b398bf20e4104836.setIcon(icon_ddaaffd3b9e349ca9118f21453c1c12c);
+            
+    
+            var popup_76a3e81438b24c5aa27b6f8a5ce9da63 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_42a2a522e65e42cc8bc5461192a520de = $(`<div id="html_42a2a522e65e42cc8bc5461192a520de" style="width: 100.0%; height: 100.0%;">Axis Bank</div>`)[0];
+                popup_76a3e81438b24c5aa27b6f8a5ce9da63.setContent(html_42a2a522e65e42cc8bc5461192a520de);
+            
+
+            marker_88e38516fe604140b398bf20e4104836.bindPopup(popup_76a3e81438b24c5aa27b6f8a5ce9da63)
+            ;
+
+            
+        
+    
+        marker_88e38516fe604140b398bf20e4104836.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ec8f4931e082409aa872bcba692b45d1 = L.marker(
+            [13.085258999999999, 80.269951],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_9db8acf5336b436eaed438b4fdea6262 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ec8f4931e082409aa872bcba692b45d1.setIcon(icon_9db8acf5336b436eaed438b4fdea6262);
+            
+    
+            var popup_5bd63983fce54a9d9802e63cf3722d33 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9f8ae9c18bb34cb1a33e8f65bb834d6f = $(`<div id="html_9f8ae9c18bb34cb1a33e8f65bb834d6f" style="width: 100.0%; height: 100.0%;">State Bank of India</div>`)[0];
+                popup_5bd63983fce54a9d9802e63cf3722d33.setContent(html_9f8ae9c18bb34cb1a33e8f65bb834d6f);
+            
+
+            marker_ec8f4931e082409aa872bcba692b45d1.bindPopup(popup_5bd63983fce54a9d9802e63cf3722d33)
+            ;
+
+            
+        
+    
+        marker_ec8f4931e082409aa872bcba692b45d1.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b8ecfc4e7e7b4ad899f1d5dbefae0e1e = L.marker(
+            [13.083281, 80.273542],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_1e28d1911b014bab88886efc11ba9446 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b8ecfc4e7e7b4ad899f1d5dbefae0e1e.setIcon(icon_1e28d1911b014bab88886efc11ba9446);
+            
+    
+            var popup_7107131463ef4c87a7b5a2dd3e799718 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_121d5f7657c14010914c4cb5575bdeab = $(`<div id="html_121d5f7657c14010914c4cb5575bdeab" style="width: 100.0%; height: 100.0%;">Union Bank of India</div>`)[0];
+                popup_7107131463ef4c87a7b5a2dd3e799718.setContent(html_121d5f7657c14010914c4cb5575bdeab);
+            
+
+            marker_b8ecfc4e7e7b4ad899f1d5dbefae0e1e.bindPopup(popup_7107131463ef4c87a7b5a2dd3e799718)
+            ;
+
+            
+        
+    
+        marker_b8ecfc4e7e7b4ad899f1d5dbefae0e1e.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_73439ad1d12240c48e0c523fd1301f1a = L.marker(
+            [13.082794999999999, 80.270675],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_d78f8a4e419b493da681ebffe80924e2 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_73439ad1d12240c48e0c523fd1301f1a.setIcon(icon_d78f8a4e419b493da681ebffe80924e2);
+            
+    
+            var popup_fe7cb0059cad4d169b778610e274cc51 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dc207a4ee44d483781db5f85831df8c8 = $(`<div id="html_dc207a4ee44d483781db5f85831df8c8" style="width: 100.0%; height: 100.0%;">ESAF small finance bank</div>`)[0];
+                popup_fe7cb0059cad4d169b778610e274cc51.setContent(html_dc207a4ee44d483781db5f85831df8c8);
+            
+
+            marker_73439ad1d12240c48e0c523fd1301f1a.bindPopup(popup_fe7cb0059cad4d169b778610e274cc51)
+            ;
+
+            
+        
+    
+        marker_73439ad1d12240c48e0c523fd1301f1a.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_917af46d2ee34a1797b305f592c2d5dd = L.marker(
+            [13.082774, 80.27074],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_b7f754cf60bb45ee8e3aa32f17993e98 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_917af46d2ee34a1797b305f592c2d5dd.setIcon(icon_b7f754cf60bb45ee8e3aa32f17993e98);
+            
+    
+            var popup_3cef366056f7479c982de1ebce309396 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3adf35dfac904f4eb1cd338bcc72ce97 = $(`<div id="html_3adf35dfac904f4eb1cd338bcc72ce97" style="width: 100.0%; height: 100.0%;">Jarameni Conceal Bank</div>`)[0];
+                popup_3cef366056f7479c982de1ebce309396.setContent(html_3adf35dfac904f4eb1cd338bcc72ce97);
+            
+
+            marker_917af46d2ee34a1797b305f592c2d5dd.bindPopup(popup_3cef366056f7479c982de1ebce309396)
+            ;
+
+            
+        
+    
+        marker_917af46d2ee34a1797b305f592c2d5dd.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0717315cc1e54568a4d37a2c9322bf71 = L.marker(
+            [13.082711999999999, 80.27074],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_d3d250dc46f344228f4b6a080a453ae7 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0717315cc1e54568a4d37a2c9322bf71.setIcon(icon_d3d250dc46f344228f4b6a080a453ae7);
+            
+    
+            var popup_b7a6b2a4ba82425a8156344a2545e5c5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d964f3ca58eb4280b9697016a08ec192 = $(`<div id="html_d964f3ca58eb4280b9697016a08ec192" style="width: 100.0%; height: 100.0%;">South Indian Bank</div>`)[0];
+                popup_b7a6b2a4ba82425a8156344a2545e5c5.setContent(html_d964f3ca58eb4280b9697016a08ec192);
+            
+
+            marker_0717315cc1e54568a4d37a2c9322bf71.bindPopup(popup_b7a6b2a4ba82425a8156344a2545e5c5)
+            ;
+
+            
+        
+    
+        marker_0717315cc1e54568a4d37a2c9322bf71.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_482991aea776421b887990d9334328d4 = L.marker(
+            [13.084456, 80.278873],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_e6a7f5abf3104076a63a8a261e37a32a = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_482991aea776421b887990d9334328d4.setIcon(icon_e6a7f5abf3104076a63a8a261e37a32a);
+            
+    
+            var popup_e56fec77c19d4ceba0887542124ed2b9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_368964bf7bdd41b9a707385472690294 = $(`<div id="html_368964bf7bdd41b9a707385472690294" style="width: 100.0%; height: 100.0%;">Punjab National Bank</div>`)[0];
+                popup_e56fec77c19d4ceba0887542124ed2b9.setContent(html_368964bf7bdd41b9a707385472690294);
+            
+
+            marker_482991aea776421b887990d9334328d4.bindPopup(popup_e56fec77c19d4ceba0887542124ed2b9)
+            ;
+
+            
+        
+    
+        marker_482991aea776421b887990d9334328d4.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3b360a0f344544259e1bdd1a9ae5cc2c = L.marker(
+            [13.093746000000001, 80.280614],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_7ca3083c2d2b4b6ab3c21dbdf1664389 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3b360a0f344544259e1bdd1a9ae5cc2c.setIcon(icon_7ca3083c2d2b4b6ab3c21dbdf1664389);
+            
+    
+            var popup_17f80dd0e39d4f58975c22c8f9c83dfa = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6e115f8d9c2e487d9c105e8897d15a1c = $(`<div id="html_6e115f8d9c2e487d9c105e8897d15a1c" style="width: 100.0%; height: 100.0%;">YES Bank</div>`)[0];
+                popup_17f80dd0e39d4f58975c22c8f9c83dfa.setContent(html_6e115f8d9c2e487d9c105e8897d15a1c);
+            
+
+            marker_3b360a0f344544259e1bdd1a9ae5cc2c.bindPopup(popup_17f80dd0e39d4f58975c22c8f9c83dfa)
+            ;
+
+            
+        
+    
+        marker_3b360a0f344544259e1bdd1a9ae5cc2c.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f0c9e7f9840f4f11a82272dc7c78aa42 = L.marker(
+            [13.090568, 80.278723],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_8c44374845d84b3b885b9e790c9c044f);
+        
+    
+
+                var icon_3d53276a9a4040bf8cab62195cf12fec = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f0c9e7f9840f4f11a82272dc7c78aa42.setIcon(icon_3d53276a9a4040bf8cab62195cf12fec);
+            
+    
+            var popup_ee195bbdb7874c86873ffcc909cdc248 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5696798d214e44879131905042dab712 = $(`<div id="html_5696798d214e44879131905042dab712" style="width: 100.0%; height: 100.0%;">Dena Bank</div>`)[0];
+                popup_ee195bbdb7874c86873ffcc909cdc248.setContent(html_5696798d214e44879131905042dab712);
+            
+
+            marker_f0c9e7f9840f4f11a82272dc7c78aa42.bindPopup(popup_ee195bbdb7874c86873ffcc909cdc248)
+            ;
+
+            
+        
+    
+        marker_f0c9e7f9840f4f11a82272dc7c78aa42.bindTooltip(
+            `<div>`
+            + `Click for more info` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>

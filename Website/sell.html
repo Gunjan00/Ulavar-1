@@ -1,0 +1,114 @@
+<html>
+<style type="text/css">
+form {
+  text-align: center;
+}
+.header {
+  background-color : #003366;
+   padding : 6px;
+   text-align : center;
+   font-size : 15px;
+   color : white;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+input[type=text], input[type=email], input[type=number]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+
+}
+select{
+    width: 300px;
+    height: 100px;
+}
+
+input[type=submit],input[type=reset]{
+  background-color: #2E86C1;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+</style>
+
+  <div class="header">
+  <h1>Ulavar</h1>
+</div>
+<br>
+<br>
+<br>
+<body background="https://leadership.ng/wp-content/uploads/2018/10/rice-field.jpg">
+<form action="payment.html" method="GET" >
+<table align="center">
+			<tr>
+                    <td><b>Produce Category</b></td>
+                    <td>
+                        <select id="buy_product" style="height: 40px;">
+                            <option value='' selected="selected">Select Category</option>
+                            <option value="1" >Cereals and Pulses</option>
+                            <option value="2" >Seeds</option>
+                            <option value="3" >Spices</option>
+                            <option value="4" >Fruits</option>
+                            <option value="5" >Vegetables</option>
+                            <option value="6" >Fertilizers &amp; pesticides</option>
+                            <option value="7" >Dairy Products</option>
+                            <option value="8" >Other Miscellaneous Agro Products</option>
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Product Name</b></td>
+                    <td>
+                        <select id="productName" style="height: 40px;">
+                            <option value='' selected="selected">Select Product</option>
+                    </select>
+                    </td>
+                <tr>
+                    <td><b>Quantity</b></td>
+                    <td><input type="text" id="quantity" placeholder="enter the quantity"/></td>
+                </tr>
+                <tr>
+                    <td><b>Weight</b></td>
+                    <td>
+                        <select id="weight"  style="height: 40px;">
+                            <option value="" >Unit </option>
+                            <option value="Tons(Weight)" >Tons (Weight) </option>
+                            <option value="Kgs(Weight)" >Kgs (Weight) </option>
+                            <option value="NosOfUnits" >Nos of units </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Price</b></td>
+                    <td><input type="number" placeholder="enter the price" id="price"/></td>
+                </tr>
+                <tr>
+                    <td><b>Email</b></td>
+                    <td><input type="email" placeholder="enter your email address" id="mail"/></td>
+                </tr>
+                <tr>
+                    <td><b>Phone number</b></td>
+                    <td><input type="number" placeholder="enter your phone number" id="phno" pattern="[0-9]{10}"/></td>
+                </tr>
+                <tr>
+
+                    <td><input type="reset" id="rst" /></td>
+                    <td><input type="submit" value="Submit" id="sub" /></td>
+                </tr>
+
+</table>
+</form>
+</body>
+</html>
